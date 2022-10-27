@@ -10,8 +10,6 @@ import java.util.List;
 public class NormalSellStrategy implements SellStrategy {
     @Override
     public double calCost(List<BaseBill> bills) {
-        return bills.stream()
-                .mapToDouble((bill)->bill.getQuantity() * bill.getUniPrice())
-                .sum();
+        return bills.stream().mapToDouble((bill)->bill.getQuantity() * bill.getUniPrice()).sum();
     }
 }

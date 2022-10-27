@@ -13,7 +13,7 @@ public class StrawberryDiscountStrategy implements SellStrategy{
     public double calCost(List<BaseBill> bills) {
         return bills.stream().mapToDouble((bill)->{
             if (FruitTypeConstant.STRAWBERRY.equals(bill.getType())) {
-                return bill.getUniPrice() * bill.getQuantity() * 0.8;
+                return (int)(bill.getUniPrice() * bill.getQuantity() * 0.8 * 100) / 100.00;
             } else {
                 return bill.getUniPrice() * bill.getQuantity();
             }
