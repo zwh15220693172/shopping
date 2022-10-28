@@ -20,6 +20,7 @@ public class CustomerA extends Customer {
 
     @Override
     public void shopping() {
+        System.out.println("customer A start: ");
         BaseBill appleBill = new AppleBill();
         BaseBill strawBerryBill = new StrawberryBill();
         CashRegister cashRegister = new NormalCashRegister();
@@ -31,5 +32,6 @@ public class CustomerA extends Customer {
         appleBill.setQuantity(quantityOfApple);
         strawBerryBill.setQuantity(quantityOfStrawBerry);
         System.out.println("your total cost is " + cashRegister.calCost() + " RMB");
+        System.out.println("customer A end ~~~");
     }
 }

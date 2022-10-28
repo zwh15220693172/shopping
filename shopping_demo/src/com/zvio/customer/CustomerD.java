@@ -21,6 +21,7 @@ public class CustomerD extends Customer{
 
     @Override
     public void shopping() {
+        System.out.println("customer D start: ");
         /*初始化账单*/
         BaseBill appleBill = new AppleBill();
         BaseBill strawBerryBill = new StrawberryBill();
@@ -38,5 +39,6 @@ public class CustomerD extends Customer{
         strawBerryBill.setQuantity(quantityOfStrawBerry);
         mangoBill.setQuantity(quantityOfMango);
         System.out.println("your total cost is " + cashRegister.calCost() + " RMB");
+        System.out.println("customer D end");
     }
 }
