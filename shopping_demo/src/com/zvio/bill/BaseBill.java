@@ -1,4 +1,4 @@
-package bill;
+package com.zvio.bill;
 
 /**
  * 账单

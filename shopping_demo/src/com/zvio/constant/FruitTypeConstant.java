@@ -1,4 +1,4 @@
-package constant;
+package com.zvio.constant;
 
 /**
  * 水果种类

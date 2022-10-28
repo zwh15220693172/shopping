@@ -1,21 +1,30 @@
-package customer;
-
-import util.InputChecker;
-import util.PositiveInputChecker;
+package com.zvio.customer;
 
 import java.util.Scanner;
 
-public class Customer {
-    protected static final Scanner input = new Scanner(System.in);
-    protected static final InputChecker<String> inputChecker = new PositiveInputChecker();
+import static com.zvio.util.InputStrCheckUtil.checkInput;
 
-    protected static int getFruitQuantity(String fruit) {
+/**
+ * 顾客对象
+ */
+public abstract class Customer {
+    protected Scanner input;
+
+    protected Customer(Scanner input) {
+        this.input = input;
+    }
+    public abstract void shopping();
+
+    /**
+     * 根据水果获取水果数量
+     */
+    protected int getFruitQuantity(String fruit) {
         boolean suitableCount = false;
         int quantityOfFruit = 0;
         while (!suitableCount) {
             System.out.print("please enter the quantity of "+fruit+": ");
-            String quantityOfAppleStr = input.nextLine();
-            if (inputChecker.checkInput(quantityOfAppleStr)) {
+            String quantityOfAppleStr = this.input.nextLine();
+            if (checkInput(quantityOfAppleStr)) {
                 quantityOfFruit = Integer.parseInt(quantityOfAppleStr);
                 suitableCount = true;
             } else {

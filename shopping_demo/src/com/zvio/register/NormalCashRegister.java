@@ -1,11 +1,9 @@
-package cash_register;
+package com.zvio.register;
 
-import bill.BaseBill;
-import sale_strategy.SellStrategy;
-
+import com.zvio.bill.BaseBill;
+import com.zvio.strategy.SellStrategy;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * 普通收银机

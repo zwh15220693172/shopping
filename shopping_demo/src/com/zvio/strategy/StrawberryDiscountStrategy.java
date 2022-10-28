@@ -1,8 +1,6 @@
-package sale_strategy;
-
-import bill.BaseBill;
-import constant.FruitTypeConstant;
-
+package com.zvio.strategy;
+import com.zvio.bill.BaseBill;
+import com.zvio.constant.FruitTypeConstant;
 import java.util.List;
 
 /**

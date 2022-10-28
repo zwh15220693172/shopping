@@ -1,6 +1,6 @@
-package sale_strategy;
+package com.zvio.strategy;
 
-import bill.BaseBill;
+import com.zvio.bill.BaseBill;
 
 import java.util.List;
 

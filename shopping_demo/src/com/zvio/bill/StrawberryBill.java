@@ -1,22 +1,22 @@
-package bill;
+package com.zvio.bill;
 
-import constant.FruitTypeConstant;
-import constant.FruitUnitPrice;
+import com.zvio.constant.FruitTypeConstant;
+import com.zvio.constant.FruitUnitPrice;
 
 /**
- * 苹果账单
+ * 草莓账单
  */
-public class AppleBill implements BaseBill{
+public class StrawberryBill implements BaseBill {
     private int quantity;
 
     @Override
     public double getUniPrice() {
-        return FruitUnitPrice.APPLE;
+        return FruitUnitPrice.STRAWBERRY;
     }
 
     @Override
     public String getType() {
-        return FruitTypeConstant.APPLE;
+        return FruitTypeConstant.STRAWBERRY;
     }
 
     @Override

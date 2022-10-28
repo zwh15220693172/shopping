@@ -1,7 +1,7 @@
-package cash_register;
+package com.zvio.register;
 
-import bill.BaseBill;
-import sale_strategy.SellStrategy;
+import com.zvio.bill.BaseBill;
+import com.zvio.strategy.SellStrategy;
 
 /**
  * 收银机
